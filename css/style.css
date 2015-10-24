@@ -1,0 +1,10 @@
+.demo {
+  margin-bottom: 50px;
+}
+
+.demo div {
+  border-radius: 3px;
+  background-color: #E3F1ED;
+  border: 1px solid white;
+  box-shadow: inset 0px 0px 20px #86C5B4;
+}

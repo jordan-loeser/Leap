@@ -19,8 +19,13 @@
 //////////////////////////////////////////////////////////////
 
 $total-columns: 12;
-$gutter-width: 60px;
+$gutter-width: 30px;
 $half-gutter: $gutter-width / 2;
+
+$xs-wrap: 100%;
+$sm-wrap: 700px;
+$md-wrap: 900px;
+$lg-wrap: 1000px;
 
 // WRAP //////////////////////////////////////////////////////
 
@@ -29,11 +34,11 @@ $half-gutter: $gutter-width / 2;
   padding-left: $half-gutter;
   padding-right: $half-gutter;
   @media(max-width: $xs){
-    width: 100%;
+    width: $xs-wrap;
   }
-  @each $breakpoint, $width in ($sm, 700px),
-                               ($md, 900px),
-                               ($lg, 1000px) {
+  @each $breakpoint, $width in ($sm, $sm-wrap),
+                               ($md, $md-wrap),
+                               ($lg, $lg-wrap) {
     @media(min-width: $breakpoint){
       width: $width;
     }
