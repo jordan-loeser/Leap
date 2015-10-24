@@ -1,0 +1,58 @@
+// SETTINGS //////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
+
+$header-font: 'Open Sans', 'Helvetica', sans-serif;
+$body-font: '', 'Arial', sans-serif;
+$font-color: #333;
+$header-color: $font-color;
+
+body {
+  font-family: $body-font;
+  color: $font-color;
+  font-size: large;
+}
+
+// HEADINGS //////////////////////////////////////////////////
+
+h {
+  font-family: $header-font;
+  margin: 1em 0 0.5em 0;
+  color: $header-color;
+  &1 {
+    @extend h;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  &2 {
+    @extend h;
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+  &3 {
+    @extend h;
+    font-size: 1.17em;
+    font-weight: 500;
+    font-style: italic;
+  }
+  &4 {
+    @extend h;
+    font-size: 1em;
+    font-weight: 600;
+  }
+  &5 {
+    @extend h;
+    font-size: .83em;
+    font-weight: 500;
+  }
+}
+
+// LINKS /////////////////////////////////////////////////////
+
+a {
+  &:hover {
+  }
+  &:visited {
+
+  }
+}

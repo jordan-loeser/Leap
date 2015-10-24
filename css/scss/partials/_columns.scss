@@ -1,0 +1,63 @@
+//----------------------------------------------------------//
+//    BREAKPOINTS FOR QUANTUM LEAP                          //
+//    -------------------------------------------------     //
+//    EXTRA SMALL DEVICES                    ie. phones     //
+      $xs: 767px;                                           //
+//    -------------------------------------------------     //
+//    SMALL DEVICES                         ie. tablets     //
+      $sm: 768px;                                           //
+//    -------------------------------------------------     //
+//    MEDIUM DEVICES                       ie. desktops     //
+      $md: 992px;                                           //
+//    -------------------------------------------------     //
+//    LARGE DEVICES                         ie. largest     //
+      $lg: 1200px;                                          //
+//    -------------------------------------------------     //
+//----------------------------------------------------------//
+
+// SETTINGS //////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
+
+$total-columns: 12;
+$gutter-width: 60px;
+$half-gutter: $gutter-width / 2;
+
+// WRAP //////////////////////////////////////////////////////
+
+.wrap {
+  margin: 0 auto;
+  padding-left: $half-gutter;
+  padding-right: $half-gutter;
+  @media(max-width: $xs){
+    width: 100%;
+  }
+  @each $breakpoint, $width in ($sm, 700px),
+                               ($md, 900px),
+                               ($lg, 1000px) {
+    @media(min-width: $breakpoint){
+      width: $width;
+    }
+  }
+}
+
+// LINE //////////////////////////////////////////////////////
+
+.line {
+  margin-left: -$half-gutter;
+  margin-right: -$half-gutter;
+  overflow: auto;
+}
+
+// BAR ///////////////////////////////////////////////////////
+
+.bar {
+  float: left;
+  padding-left: $half-gutter;
+  padding-right: $half-gutter;
+
+  @for $number from 1 through $total-columns {
+    &-#{$number} {
+      @extend .bar;
+      width: $number / $total-columns * 100%;}
+  }
+}
