@@ -25,7 +25,7 @@ $half-gutter: $gutter-width / 2;
 $xs-wrap: 100%;
 $sm-wrap: 700px;
 $md-wrap: 900px;
-$lg-wrap: 1000px;
+$lg-wrap: 1100px;
 
 // WRAP //////////////////////////////////////////////////////
 
@@ -59,10 +59,31 @@ $lg-wrap: 1000px;
   float: left;
   padding-left: $half-gutter;
   padding-right: $half-gutter;
+  width: 100%;
+  @each $size in xs, sm, md, lg {
+    &-#{$size} {
+      @for $number from 1 through $total-columns {
+        &-#{$number} {
+          @extend .bar;
+} } } } }
 
-  @for $number from 1 through $total-columns {
-    &-#{$number} {
-      @extend .bar;
-      width: $number / $total-columns * 100%;}
+.bar {
+  float: left;
+  padding-left: $half-gutter;
+  padding-right: $half-gutter;
+  @media(max-width: $xs){
+    @for $number from 1 through $total-columns {
+      &-xs-#{$number} {
+        width: $number / $total-columns * 100%;
+      }
+    }
   }
-}
+  @each $size , $breakpoint in (sm, $sm),
+                               (md, $md),
+                               (lg, $lg) {
+    &-#{$size} {
+      @media(min-width: $breakpoint){
+        @for $number from 1 through $total-columns {
+          &-#{$number} {
+            width: $number / $total-columns * 100%;
+} } } } } }

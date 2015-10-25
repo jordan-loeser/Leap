@@ -23,41 +23,123 @@ ol {
       width: 900px; } }
   @media (min-width: 1200px) {
     .wrap {
-      width: 1000px; } }
+      width: 1100px; } }
 
 .line {
   margin-left: -15px;
   margin-right: -15px;
   overflow: auto; }
 
-.bar, .bar-1, .bar-2, .bar-3, .bar-4, .bar-5, .bar-6, .bar-7, .bar-8, .bar-9, .bar-10, .bar-11, .bar-12 {
+.bar, .bar-xs-1, .bar-xs-2, .bar-xs-3, .bar-xs-4, .bar-xs-5, .bar-xs-6, .bar-xs-7, .bar-xs-8, .bar-xs-9, .bar-xs-10, .bar-xs-11, .bar-xs-12, .bar-sm-1, .bar-sm-2, .bar-sm-3, .bar-sm-4, .bar-sm-5, .bar-sm-6, .bar-sm-7, .bar-sm-8, .bar-sm-9, .bar-sm-10, .bar-sm-11, .bar-sm-12, .bar-md-1, .bar-md-2, .bar-md-3, .bar-md-4, .bar-md-5, .bar-md-6, .bar-md-7, .bar-md-8, .bar-md-9, .bar-md-10, .bar-md-11, .bar-md-12, .bar-lg-1, .bar-lg-2, .bar-lg-3, .bar-lg-4, .bar-lg-5, .bar-lg-6, .bar-lg-7, .bar-lg-8, .bar-lg-9, .bar-lg-10, .bar-lg-11, .bar-lg-12 {
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%; }
+
+.bar, .bar-xs-1, .bar-xs-2, .bar-xs-3, .bar-xs-4, .bar-xs-5, .bar-xs-6, .bar-xs-7, .bar-xs-8, .bar-xs-9, .bar-xs-10, .bar-xs-11, .bar-xs-12, .bar-sm-1, .bar-sm-2, .bar-sm-3, .bar-sm-4, .bar-sm-5, .bar-sm-6, .bar-sm-7, .bar-sm-8, .bar-sm-9, .bar-sm-10, .bar-sm-11, .bar-sm-12, .bar-md-1, .bar-md-2, .bar-md-3, .bar-md-4, .bar-md-5, .bar-md-6, .bar-md-7, .bar-md-8, .bar-md-9, .bar-md-10, .bar-md-11, .bar-md-12, .bar-lg-1, .bar-lg-2, .bar-lg-3, .bar-lg-4, .bar-lg-5, .bar-lg-6, .bar-lg-7, .bar-lg-8, .bar-lg-9, .bar-lg-10, .bar-lg-11, .bar-lg-12 {
   float: left;
   padding-left: 15px;
   padding-right: 15px; }
-  .bar-1 {
-    width: 8.33333%; }
-  .bar-2 {
-    width: 16.66667%; }
-  .bar-3 {
-    width: 25%; }
-  .bar-4 {
-    width: 33.33333%; }
-  .bar-5 {
-    width: 41.66667%; }
-  .bar-6 {
-    width: 50%; }
-  .bar-7 {
-    width: 58.33333%; }
-  .bar-8 {
-    width: 66.66667%; }
-  .bar-9 {
-    width: 75%; }
-  .bar-10 {
-    width: 83.33333%; }
-  .bar-11 {
-    width: 91.66667%; }
-  .bar-12 {
-    width: 100%; }
+  @media (max-width: 767px) {
+    .bar-xs-1 {
+      width: 8.33333%; }
+    .bar-xs-2 {
+      width: 16.66667%; }
+    .bar-xs-3 {
+      width: 25%; }
+    .bar-xs-4 {
+      width: 33.33333%; }
+    .bar-xs-5 {
+      width: 41.66667%; }
+    .bar-xs-6 {
+      width: 50%; }
+    .bar-xs-7 {
+      width: 58.33333%; }
+    .bar-xs-8 {
+      width: 66.66667%; }
+    .bar-xs-9 {
+      width: 75%; }
+    .bar-xs-10 {
+      width: 83.33333%; }
+    .bar-xs-11 {
+      width: 91.66667%; }
+    .bar-xs-12 {
+      width: 100%; } }
+  @media (min-width: 768px) {
+    .bar-sm-1 {
+      width: 8.33333%; }
+    .bar-sm-2 {
+      width: 16.66667%; }
+    .bar-sm-3 {
+      width: 25%; }
+    .bar-sm-4 {
+      width: 33.33333%; }
+    .bar-sm-5 {
+      width: 41.66667%; }
+    .bar-sm-6 {
+      width: 50%; }
+    .bar-sm-7 {
+      width: 58.33333%; }
+    .bar-sm-8 {
+      width: 66.66667%; }
+    .bar-sm-9 {
+      width: 75%; }
+    .bar-sm-10 {
+      width: 83.33333%; }
+    .bar-sm-11 {
+      width: 91.66667%; }
+    .bar-sm-12 {
+      width: 100%; } }
+  @media (min-width: 992px) {
+    .bar-md-1 {
+      width: 8.33333%; }
+    .bar-md-2 {
+      width: 16.66667%; }
+    .bar-md-3 {
+      width: 25%; }
+    .bar-md-4 {
+      width: 33.33333%; }
+    .bar-md-5 {
+      width: 41.66667%; }
+    .bar-md-6 {
+      width: 50%; }
+    .bar-md-7 {
+      width: 58.33333%; }
+    .bar-md-8 {
+      width: 66.66667%; }
+    .bar-md-9 {
+      width: 75%; }
+    .bar-md-10 {
+      width: 83.33333%; }
+    .bar-md-11 {
+      width: 91.66667%; }
+    .bar-md-12 {
+      width: 100%; } }
+  @media (min-width: 1200px) {
+    .bar-lg-1 {
+      width: 8.33333%; }
+    .bar-lg-2 {
+      width: 16.66667%; }
+    .bar-lg-3 {
+      width: 25%; }
+    .bar-lg-4 {
+      width: 33.33333%; }
+    .bar-lg-5 {
+      width: 41.66667%; }
+    .bar-lg-6 {
+      width: 50%; }
+    .bar-lg-7 {
+      width: 58.33333%; }
+    .bar-lg-8 {
+      width: 66.66667%; }
+    .bar-lg-9 {
+      width: 75%; }
+    .bar-lg-10 {
+      width: 83.33333%; }
+    .bar-lg-11 {
+      width: 91.66667%; }
+    .bar-lg-12 {
+      width: 100%; } }
 
 body {
   font-family: "", "Arial", sans-serif;
@@ -85,5 +167,13 @@ h, h1, h2, h3, h4, h5 {
   h5 {
     font-size: .83em;
     font-weight: 500; }
+
+a {
+  text-decoration: none;
+  color: #199673; }
+  a:hover {
+    color: #126a51; }
+  a:visited {
+    color: #158062; }
 
 /*# sourceMappingURL=leap.css.map */

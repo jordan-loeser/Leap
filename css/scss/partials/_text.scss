@@ -5,6 +5,7 @@ $header-font: 'Open Sans', 'Helvetica', sans-serif;
 $body-font: '', 'Arial', sans-serif;
 $font-color: #333;
 $header-color: #199673;
+$link-color: $header-color;
 
 body {
   font-family: $body-font;
@@ -50,9 +51,12 @@ h {
 // LINKS /////////////////////////////////////////////////////
 
 a {
+  text-decoration: none;
+  color: $link-color;
   &:hover {
+    color: darken($link-color, 10%);
   }
   &:visited {
-
+    color: darken($link-color, 5%);
   }
 }
