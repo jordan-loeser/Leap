@@ -22,31 +22,48 @@ h {
   &1 {
     @extend h;
     font-size: 2em;
-    text-align: center;
     margin-bottom: 1em;
   }
   &2 {
     @extend h;
     font-size: 1.5em;
-    font-weight: 600;
+    font-weight: 700;
+    margin-bottom: .15em;
   }
   &3 {
     @extend h;
     font-size: 1.17em;
-    font-weight: 500;
+    font-weight: 400;
     font-style: italic;
   }
   &4 {
     @extend h;
     font-size: 1em;
     font-weight: 600;
+    margin-top: 0;
   }
   &5 {
     @extend h;
     font-size: .83em;
     font-weight: 500;
+    margin-top: 0;
   }
 }
+
+.center {
+  text-align: center;
+}
+
+.subtitle {
+  margin-top: 0;
+}
+
+// PARAGRAPHS ////////////////////////////////////////////////
+
+p {
+  margin-top: 0;
+}
+
 
 // LINKS /////////////////////////////////////////////////////
 
