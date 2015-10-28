@@ -152,21 +152,32 @@ h, h1, h2, h3, h4, h5 {
   color: #199673; }
   h1 {
     font-size: 2em;
-    text-align: center;
     margin-bottom: 1em; }
   h2 {
     font-size: 1.5em;
-    font-weight: 600; }
+    font-weight: 700;
+    margin-bottom: .15em; }
   h3 {
     font-size: 1.17em;
-    font-weight: 500;
+    font-weight: 400;
     font-style: italic; }
   h4 {
     font-size: 1em;
-    font-weight: 600; }
+    font-weight: 600;
+    margin-top: 0; }
   h5 {
     font-size: .83em;
-    font-weight: 500; }
+    font-weight: 500;
+    margin-top: 0; }
+
+.center {
+  text-align: center; }
+
+.subtitle {
+  margin-top: 0; }
+
+p {
+  margin-top: 0; }
 
 a {
   text-decoration: none;
