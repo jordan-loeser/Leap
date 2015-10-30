@@ -1,0 +1,25 @@
+body {
+  padding-bottom: 50px;
+}
+
+.demo {
+  margin-bottom: 10px;
+  div {
+    border-radius: 10px;
+    background-color: #397D24;
+    border: 2px solid white;
+    background: linear-gradient(to right bottom,
+                  rgba(0,67,26,1) 0%,
+                  #397D24 100% );
+  }
+  h3 {
+    margin: .75em 0em;
+    color: white;
+  }
+}
+
+#buttons {
+  .bar-xs-12 {
+    padding-bottom: 10px;
+  }
+}
