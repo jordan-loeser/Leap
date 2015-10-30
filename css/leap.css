@@ -149,7 +149,7 @@ body {
 h, h1, h2, h3, h4, h5 {
   font-family: "Open Sans", "Helvetica", sans-serif;
   margin: 1em 0 0.5em 0;
-  color: #199673; }
+  color: #255D14; }
   h1 {
     font-size: 2em;
     margin-bottom: 1em; }
@@ -181,10 +181,28 @@ p {
 
 a {
   text-decoration: none;
-  color: #199673; }
+  color: #255D14; }
   a:hover {
-    color: #126a51; }
+    color: #14330b; }
   a:visited {
-    color: #158062; }
+    color: #1d480f; }
+
+header {
+  padding: 2em;
+  background: linear-gradient(to right bottom, #00431a 0%, #becd00 100%);
+  box-shadow: inset 0px 0px 70px #00431A; }
+  header h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: 400;
+    margin-bottom: 0; }
+  header h2 {
+    font-weight: 400;
+    color: white;
+    font-style: italic;
+    opacity: .7;
+    margin: .5em;
+    margin-left: 0; }
 
 /*# sourceMappingURL=leap.css.map */
