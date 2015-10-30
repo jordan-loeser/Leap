@@ -1,0 +1,22 @@
+header {
+  padding: 2em;
+  background: linear-gradient(to right bottom,
+                rgba(0,67,26,1) 0%,
+                rgba(190,205,0,1) 100% );
+  box-shadow: inset 0px 0px 70px #00431A;
+  h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+  h2 {
+    font-weight: 400;
+    color: white;
+    font-style: italic;
+    opacity: .7;
+    margin: .5em;
+    margin-left: 0;
+  }
+}

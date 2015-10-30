@@ -1,214 +1,45 @@
-*, *:after, *:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+/*
+Error: Invalid CSS after "...rtials/buttons'": expected "{", was ";"
+        on line 6 of scss/input.scss
 
-html,
-body,
-ul,
-ol {
-  margin: 0;
-  padding: 0; }
+1: @import 'partials/reset';
+2: @import 'partials/columns';
+3: @import 'partials/text';
+4: @import 'partials/mixins';
+5: <<<<<<< HEAD
+6: @import 'partials/buttons';
+7: =======
+8: @import 'partials/style';
+9: >>>>>>> master
 
-.wrap {
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px; }
-  @media (max-width: 767px) {
-    .wrap {
-      width: 100%; } }
-  @media (min-width: 768px) {
-    .wrap {
-      width: 700px; } }
-  @media (min-width: 992px) {
-    .wrap {
-      width: 900px; } }
-  @media (min-width: 1200px) {
-    .wrap {
-      width: 1100px; } }
-
-.line {
-  margin-left: -15px;
-  margin-right: -15px;
-  overflow: auto; }
-
-.bar, .bar-xs-1, .bar-xs-2, .bar-xs-3, .bar-xs-4, .bar-xs-5, .bar-xs-6, .bar-xs-7, .bar-xs-8, .bar-xs-9, .bar-xs-10, .bar-xs-11, .bar-xs-12, .bar-sm-1, .bar-sm-2, .bar-sm-3, .bar-sm-4, .bar-sm-5, .bar-sm-6, .bar-sm-7, .bar-sm-8, .bar-sm-9, .bar-sm-10, .bar-sm-11, .bar-sm-12, .bar-md-1, .bar-md-2, .bar-md-3, .bar-md-4, .bar-md-5, .bar-md-6, .bar-md-7, .bar-md-8, .bar-md-9, .bar-md-10, .bar-md-11, .bar-md-12, .bar-lg-1, .bar-lg-2, .bar-lg-3, .bar-lg-4, .bar-lg-5, .bar-lg-6, .bar-lg-7, .bar-lg-8, .bar-lg-9, .bar-lg-10, .bar-lg-11, .bar-lg-12 {
-  float: left;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 100%; }
-
-.bar, .bar-xs-1, .bar-xs-2, .bar-xs-3, .bar-xs-4, .bar-xs-5, .bar-xs-6, .bar-xs-7, .bar-xs-8, .bar-xs-9, .bar-xs-10, .bar-xs-11, .bar-xs-12, .bar-sm-1, .bar-sm-2, .bar-sm-3, .bar-sm-4, .bar-sm-5, .bar-sm-6, .bar-sm-7, .bar-sm-8, .bar-sm-9, .bar-sm-10, .bar-sm-11, .bar-sm-12, .bar-md-1, .bar-md-2, .bar-md-3, .bar-md-4, .bar-md-5, .bar-md-6, .bar-md-7, .bar-md-8, .bar-md-9, .bar-md-10, .bar-md-11, .bar-md-12, .bar-lg-1, .bar-lg-2, .bar-lg-3, .bar-lg-4, .bar-lg-5, .bar-lg-6, .bar-lg-7, .bar-lg-8, .bar-lg-9, .bar-lg-10, .bar-lg-11, .bar-lg-12 {
-  float: left;
-  padding-left: 15px;
-  padding-right: 15px; }
-  @media (max-width: 767px) {
-    .bar-xs-1 {
-      width: 8.33333%; }
-    .bar-xs-2 {
-      width: 16.66667%; }
-    .bar-xs-3 {
-      width: 25%; }
-    .bar-xs-4 {
-      width: 33.33333%; }
-    .bar-xs-5 {
-      width: 41.66667%; }
-    .bar-xs-6 {
-      width: 50%; }
-    .bar-xs-7 {
-      width: 58.33333%; }
-    .bar-xs-8 {
-      width: 66.66667%; }
-    .bar-xs-9 {
-      width: 75%; }
-    .bar-xs-10 {
-      width: 83.33333%; }
-    .bar-xs-11 {
-      width: 91.66667%; }
-    .bar-xs-12 {
-      width: 100%; } }
-  @media (min-width: 768px) {
-    .bar-sm-1 {
-      width: 8.33333%; }
-    .bar-sm-2 {
-      width: 16.66667%; }
-    .bar-sm-3 {
-      width: 25%; }
-    .bar-sm-4 {
-      width: 33.33333%; }
-    .bar-sm-5 {
-      width: 41.66667%; }
-    .bar-sm-6 {
-      width: 50%; }
-    .bar-sm-7 {
-      width: 58.33333%; }
-    .bar-sm-8 {
-      width: 66.66667%; }
-    .bar-sm-9 {
-      width: 75%; }
-    .bar-sm-10 {
-      width: 83.33333%; }
-    .bar-sm-11 {
-      width: 91.66667%; }
-    .bar-sm-12 {
-      width: 100%; } }
-  @media (min-width: 992px) {
-    .bar-md-1 {
-      width: 8.33333%; }
-    .bar-md-2 {
-      width: 16.66667%; }
-    .bar-md-3 {
-      width: 25%; }
-    .bar-md-4 {
-      width: 33.33333%; }
-    .bar-md-5 {
-      width: 41.66667%; }
-    .bar-md-6 {
-      width: 50%; }
-    .bar-md-7 {
-      width: 58.33333%; }
-    .bar-md-8 {
-      width: 66.66667%; }
-    .bar-md-9 {
-      width: 75%; }
-    .bar-md-10 {
-      width: 83.33333%; }
-    .bar-md-11 {
-      width: 91.66667%; }
-    .bar-md-12 {
-      width: 100%; } }
-  @media (min-width: 1200px) {
-    .bar-lg-1 {
-      width: 8.33333%; }
-    .bar-lg-2 {
-      width: 16.66667%; }
-    .bar-lg-3 {
-      width: 25%; }
-    .bar-lg-4 {
-      width: 33.33333%; }
-    .bar-lg-5 {
-      width: 41.66667%; }
-    .bar-lg-6 {
-      width: 50%; }
-    .bar-lg-7 {
-      width: 58.33333%; }
-    .bar-lg-8 {
-      width: 66.66667%; }
-    .bar-lg-9 {
-      width: 75%; }
-    .bar-lg-10 {
-      width: 83.33333%; }
-    .bar-lg-11 {
-      width: 91.66667%; }
-    .bar-lg-12 {
-      width: 100%; } }
-
-body {
-  font-family: "", "Arial", sans-serif;
-  color: #333;
-  font-size: large; }
-
-h, h1, h2, h3, h4, h5 {
-  font-family: "Open Sans", "Helvetica", sans-serif;
-  margin: 1em 0 0.5em 0;
-  color: #199673; }
-  h1 {
-    font-size: 2em;
-    margin-bottom: 1em; }
-  h2 {
-    font-size: 1.5em;
-    font-weight: 700;
-    margin-bottom: .15em; }
-  h3 {
-    font-size: 1.17em;
-    font-weight: 400;
-    font-style: italic; }
-  h4 {
-    font-size: 1em;
-    font-weight: 600;
-    margin-top: 0; }
-  h5 {
-    font-size: .83em;
-    font-weight: 500;
-    margin-top: 0; }
-
-.center {
-  text-align: center; }
-
-.subtitle {
-  margin-top: 0; }
-
-p {
-  margin-top: 0; }
-
-a {
-  text-decoration: none;
-  color: #199673; }
-  a:hover {
-    color: #126a51; }
-  a:visited {
-    color: #158062; }
-
-button {
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  background-clip: padding-box;
-  font-family: "Open Sans", "Helvetica", sans-serif;
-  background-color: #199673;
-  color: white;
-  padding: 10px;
-  min-width: 100px;
-  border: none;
-  font-size: 1em; }
-  button:hover {
-    background-color: #126a51; }
-  button:focus {
-    outline: 0;
-    border: 3px solid #126a51;
-    padding: 7px; }
-  button.dark {
-    background-color: #126a51; }
-  button.light {
-    background-color: #20c295; }
-
-/*# sourceMappingURL=leap.css.map */
+Backtrace:
+scss/input.scss:6
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:1161:in `expected'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:1097:in `expected'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:1092:in `tok!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:637:in `block'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:631:in `ruleset'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:656:in `block_child'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:649:in `block_contents'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:117:in `stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:42:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/engine.rb:403:in `_to_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/engine.rb:378:in `_render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/engine.rb:295:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:209:in `each'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:328:in `block in watch'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/vendor/listen/lib/listen/listener.rb:252:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...rtials/buttons'\": expected \"{\", was \";\"\A         on line 6 of scss/input.scss\A \A 1: @import 'partials/reset';\A 2: @import 'partials/columns';\A 3: @import 'partials/text';\A 4: @import 'partials/mixins';\A 5: <<<<<<< HEAD\A 6: @import 'partials/buttons';\A 7: =======\A 8: @import 'partials/style';\A 9: >>>>>>> master"; }
