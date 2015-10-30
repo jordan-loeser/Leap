@@ -18,14 +18,25 @@
 
   <header>
     <div class="wrap">
-      <h1>Quantum Leap</h1>
-      <h2>Jumpstart your html</h2>
+      <div class="bar-xs-12">
+        <h1>Quantum Leap</h1>
+        <h2>Jumpstart your html</h2>
+      </div>
+      <!-- NAVBAR -->
+      <div class="bar-xs-12">
+        <nav>
+          <a class="button" href="#text_demo">Text</a>
+          <a class="button" href="#columns_demo">Columns</a>
+          <a class="button" href="#buttons_demo">Buttons</a>
+          <a class="button" href="#forms_demo">Forms</a>
+        </nav>
+      </div>
     </div>
   </header>
 
   <div class="wrap">
     <!-- TEXT DEMONSTRATION -->
-    <div class="line">
+    <div id="text_demo" class="line">
       <div class="bar-sm-12">
         <h1 class="center">This is the Main Heading of the Document</h1>
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
@@ -42,7 +53,7 @@
     </div>
     <hr/>
     <!-- COLUMN DEMONSTRATION -->
-    <div class="line">
+    <div id="columns_demo" class="line">
       <div class="bar-xs-12">
         <h1>Columns</h1>
         <h3>Why use columns?</h3>
@@ -105,7 +116,8 @@
         </div>
       </div>
       <hr>
-      <div  id="buttons" class="line">
+      <!-- BUTTONS -->
+      <div  id="buttons_demo" class="line">
         <div class="bar-xs-12">
           <h1>Buttons</h1>
           <button>Button</button>
@@ -113,9 +125,8 @@
           <button class="light">Light Button</button>
         </div>
         <div class="bar-xs-12">
-          <button>Button</button>
-          <button class="dark">Dark Button</button>
-          <button class="light">Light Button</button>
+          <button class="alert">Alert Button</button>
+          <button class="warning">Warning Button</button>
         </div>
       </div>
       <a href="#top"><br/>Take it from the top</a>

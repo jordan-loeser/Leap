@@ -2,6 +2,22 @@ body {
   padding-bottom: 50px;
 }
 
+header {
+  overflow: auto;
+}
+
+nav {
+  padding: 1em 0px;
+  padding-bottom: 0px;
+  .button {
+    background-color: rgba(255,255,255,.5);
+    color: $header-color;
+    &:hover {
+      background-color: white;
+    }
+  }
+}
+
 .demo {
   margin-bottom: 10px;
   div {

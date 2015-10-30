@@ -199,21 +199,59 @@ button {
   padding: 10px;
   min-width: 100px;
   border: none;
-  font-size: 1em; }
+  font-size: 1em;
+  margin-bottom: 5px; }
   button:hover {
     background-color: #14330b; }
   button:focus {
     outline: 0;
-    border: 3px solid #14330b;
+    border: 3px solid orange;
     padding: 7px; }
   button.dark {
     background-color: #14330b; }
     button.dark:hover {
       background-color: #255D14; }
-  button.light {
-    background-color: #36871d; }
-    button.light:hover {
+  button.alert {
+    background-color: #FF8C00; }
+    button.alert:hover {
+      background-color: #cc7000; }
+  button.warning {
+    background-color: #F44336; }
+    button.warning:hover {
+      background-color: #ea1c0d; }
+
+a.button {
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-clip: padding-box;
+  font-family: "Open Sans", "Helvetica", sans-serif;
+  background-color: #255D14;
+  color: white;
+  padding: 10px;
+  min-width: 100px;
+  border: none;
+  font-size: 1em;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 5px; }
+  a.button:hover {
+    background-color: #14330b; }
+  a.button:focus {
+    outline: 0;
+    border: 3px solid orange;
+    padding: 7px; }
+  a.button.dark {
+    background-color: #14330b; }
+    a.button.dark:hover {
       background-color: #255D14; }
+  a.button.alert {
+    background-color: #FF8C00; }
+    a.button.alert:hover {
+      background-color: #cc7000; }
+  a.button.warning {
+    background-color: #F44336; }
+    a.button.warning:hover {
+      background-color: #ea1c0d; }
 
 header {
   padding: 2em;
@@ -235,6 +273,18 @@ header {
 
 body {
   padding-bottom: 50px; }
+
+header {
+  overflow: auto; }
+
+nav {
+  padding: 1em 0px;
+  padding-bottom: 0px; }
+  nav .button {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #255D14; }
+    nav .button:hover {
+      background-color: white; }
 
 .demo {
   margin-bottom: 10px; }
