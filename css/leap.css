@@ -1,4 +1,6 @@
 *, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 html,
@@ -187,6 +189,70 @@ a {
   a:visited {
     color: #1d480f; }
 
+button {
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-clip: padding-box;
+  font-family: "Open Sans", "Helvetica", sans-serif;
+  background-color: #255D14;
+  color: white;
+  padding: 10px;
+  min-width: 100px;
+  border: none;
+  font-size: 1em;
+  margin-bottom: 5px; }
+  button:hover {
+    background-color: #14330b; }
+  button:focus {
+    outline: 0;
+    border: 3px solid orange;
+    padding: 7px; }
+  button.dark {
+    background-color: #14330b; }
+    button.dark:hover {
+      background-color: #255D14; }
+  button.alert {
+    background-color: #FF8C00; }
+    button.alert:hover {
+      background-color: #cc7000; }
+  button.warning {
+    background-color: #F44336; }
+    button.warning:hover {
+      background-color: #ea1c0d; }
+
+a.button {
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-clip: padding-box;
+  font-family: "Open Sans", "Helvetica", sans-serif;
+  background-color: #255D14;
+  color: white;
+  padding: 10px;
+  min-width: 100px;
+  border: none;
+  font-size: 1em;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 5px; }
+  a.button:hover {
+    background-color: #14330b; }
+  a.button:focus {
+    outline: 0;
+    border: 3px solid orange;
+    padding: 7px; }
+  a.button.dark {
+    background-color: #14330b; }
+    a.button.dark:hover {
+      background-color: #255D14; }
+  a.button.alert {
+    background-color: #FF8C00; }
+    a.button.alert:hover {
+      background-color: #cc7000; }
+  a.button.warning {
+    background-color: #F44336; }
+    a.button.warning:hover {
+      background-color: #ea1c0d; }
+
 header {
   padding: 2em;
   background: linear-gradient(to right bottom, #00431a 0%, #becd00 100%);
@@ -204,5 +270,34 @@ header {
     opacity: .7;
     margin: .5em;
     margin-left: 0; }
+
+body {
+  padding-bottom: 50px; }
+
+header {
+  overflow: auto; }
+
+nav {
+  padding: 1em 0px;
+  padding-bottom: 0px; }
+  nav .button {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #255D14; }
+    nav .button:hover {
+      background-color: white; }
+
+.demo {
+  margin-bottom: 10px; }
+  .demo div {
+    border-radius: 10px;
+    background-color: #397D24;
+    border: 2px solid white;
+    background: linear-gradient(to right bottom, #00431a 0%, #397D24 100%); }
+  .demo h3 {
+    margin: .75em 0em;
+    color: white; }
+
+#buttons .bar-xs-12 {
+  padding-bottom: 10px; }
 
 /*# sourceMappingURL=leap.css.map */

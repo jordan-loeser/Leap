@@ -1,0 +1,89 @@
+// SETTINGS //////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
+
+$button-color: $header-color;
+$button-text-color: white;
+$button-font: $header-font;
+$alert-color: #FF8C00;
+$warning-color: #F44336;
+$focus-color: orange;
+
+// BUTTONS ///////////////////////////////////////////////////
+
+button {
+  @include border-radius(5px);
+  font-family: $button-font;
+  background-color: $button-color;
+  color: $button-text-color;
+  padding: 10px;
+  min-width: 100px;
+  border: none;
+  font-size: 1em;
+  margin-bottom: 5px;
+  &:hover {
+    background-color: darken($button-color, 10%);
+  }
+  &:focus {
+    outline: 0;
+    border: 3px solid $focus-color;
+    padding: 7px;
+  }
+  &.dark {
+    background-color: darken($button-color, 10%);
+    &:hover {
+      background-color: $button-color;
+    }
+  }
+  &.alert {
+    background-color: $alert-color;
+    &:hover {
+      background-color: darken($alert-color, 10%);
+    }
+  }
+  &.warning {
+    background-color: $warning-color;
+    &:hover {
+      background-color: darken($warning-color, 10%);
+    }
+  }
+}
+
+a.button {
+  @include border-radius(5px);
+  font-family: $button-font;
+  background-color: $button-color;
+  color: $button-text-color;
+  padding: 10px;
+  min-width: 100px;
+  border: none;
+  font-size: 1em;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 5px;
+  &:hover {
+    background-color: darken($button-color, 10%);
+  }
+  &:focus {
+    outline: 0;
+    border: 3px solid $focus-color;
+    padding: 7px;
+  }
+  &.dark {
+    background-color: darken($button-color, 10%);
+    &:hover {
+      background-color: $button-color;
+    }
+  }
+  &.alert {
+    background-color: $alert-color;
+    &:hover {
+      background-color: darken($alert-color, 10%);
+    }
+  }
+  &.warning {
+    background-color: $warning-color;
+    &:hover {
+      background-color: darken($warning-color, 10%);
+    }
+  }
+}
