@@ -1,4 +1,6 @@
 *, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 html,
@@ -186,5 +188,27 @@ a {
     color: #126a51; }
   a:visited {
     color: #158062; }
+
+button {
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-clip: padding-box;
+  font-family: "Open Sans", "Helvetica", sans-serif;
+  background-color: #199673;
+  color: white;
+  padding: 10px;
+  min-width: 100px;
+  border: none;
+  font-size: 1em; }
+  button:hover {
+    background-color: #126a51; }
+  button:focus {
+    outline: 0;
+    border: 3px solid #126a51;
+    padding: 7px; }
+  button.dark {
+    background-color: #126a51; }
+  button.light {
+    background-color: #20c295; }
 
 /*# sourceMappingURL=leap.css.map */

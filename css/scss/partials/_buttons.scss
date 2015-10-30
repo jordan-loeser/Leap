@@ -1,0 +1,33 @@
+// SETTINGS //////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
+
+$button-color: $header-color;
+$button-text-color: white;
+$button-font: $header-font;
+
+// BUTTONS ///////////////////////////////////////////////////
+
+button {
+  @include border-radius(5px);
+  font-family: $button-font;
+  background-color: $button-color;
+  color: $button-text-color;
+  padding: 10px;
+  min-width: 100px;
+  border: none;
+  font-size: 1em;
+  &:hover {
+    background-color: darken($button-color, 10%);
+  }
+  &:focus {
+    outline: 0;
+    border: 3px solid darken($button-color, 10%);
+    padding: 7px;
+  }
+  &.dark {
+    background-color: darken($button-color, 10%);
+  }
+  &.light {
+    background-color: lighten($button-color, 10%);
+  }
+}
