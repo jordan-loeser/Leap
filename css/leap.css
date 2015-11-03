@@ -153,6 +153,7 @@ h, h1, h2, h3, h4, h5 {
   margin: 1em 0 0.5em 0;
   color: #255D14; }
   h1 {
+    font-family: "Roboto", sans-serif;
     font-size: 2em;
     margin-bottom: 1em; }
   h2 {
@@ -252,11 +253,39 @@ a.button {
     background-color: #F44336; }
     a.button.warning:hover {
       background-color: #ea1c0d; }
+  a.button.grey {
+    background-color: grey; }
+    a.button.grey:hover {
+      background-color: #676767; }
+  a.button.white {
+    background-color: white;
+    color: #333; }
+    a.button.white:hover {
+      background-color: #e6e6e6; }
+  a.button.black {
+    background-color: #333; }
+    a.button.black:hover {
+      background-color: #1a1a1a; }
+  a.button.frost {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #333; }
+    a.button.frost:hover {
+      background-color: white; }
 
+footer {
+  background-color: #006131;
+  margin-top: 3em;
+  padding: 3em; }
+
+/* DEMO ONLY */
 header {
   padding: 2em;
-  background: linear-gradient(to right bottom, #00431a 0%, #becd00 100%);
-  box-shadow: inset 0px 0px 70px #00431A; }
+  background-image: url(../images/jump.jpeg);
+  background-size: 110%;
+  background-position-y: 80%;
+  background-position-x: 0%;
+  background-blend-mode: overlay;
+  background-color: #00431a; }
   header h1 {
     color: white;
     text-transform: uppercase;
@@ -271,8 +300,21 @@ header {
     margin: .5em;
     margin-left: 0; }
 
-body {
-  padding-bottom: 50px; }
+#index header {
+  background-size: 140%;
+  background-position-y: 80%;
+  background-position-x: 0%;
+  height: 100%;
+  height: 100vh; }
+  #index header h1 {
+    font-size: 6em; }
+  #index header p {
+    margin-top: 3em;
+    color: white;
+    max-width: 45%;
+    font-size: 1.2em;
+    font-family: 'Open Sans';
+    font-weight: 100; }
 
 header {
   overflow: auto; }
@@ -290,12 +332,27 @@ nav {
   margin-bottom: 10px; }
   .demo div {
     border-radius: 10px;
-    background-color: #397D24;
-    border: 2px solid white;
-    background: linear-gradient(to right bottom, #00431a 0%, #397D24 100%); }
+    background-color: #006131;
+    border: 2px solid white; }
   .demo h3 {
     margin: .75em 0em;
     color: white; }
+
+.line.demo {
+  margin-left: 0;
+  margin-right: 0; }
+
+p.demo {
+  margin-top: 1em; }
+
+h2.demo {
+  margin-top: 2em; }
+
+.blueprint div {
+  height: 20px;
+  margin-bottom: 9px;
+  border-radius: 5px;
+  background: #DCDCDC; }
 
 #buttons .bar-xs-12 {
   padding-bottom: 10px; }

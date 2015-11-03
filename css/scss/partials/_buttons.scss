@@ -86,4 +86,30 @@ a.button {
       background-color: darken($warning-color, 10%);
     }
   }
+  &.grey {
+    background-color: grey;
+    &:hover {
+      background-color: darken(grey, 10%);
+    }
+  }
+  &.white {
+    background-color: white;
+    color: #333;
+    &:hover {
+      background-color: darken(#FFF, 10%);
+    }
+  }
+  &.black {
+    background-color: #333;
+    &:hover {
+      background-color: darken(#333, 10%);
+    }
+  }
+  &.frost {
+    background-color: rgba(255,255,255,.7);
+    color: #333;
+    &:hover {
+      background-color: white;
+    }
+  }
 }

@@ -2,6 +2,7 @@
 //////////////////////////////////////////////////////////////
 
 $header-font: 'Open Sans', 'Helvetica', sans-serif;
+$secondary-font: 'Roboto', sans-serif;
 $body-font: '', 'Arial', sans-serif;
 $font-color: #333;
 $header-color: #255D14;
@@ -20,6 +21,7 @@ h {
   margin: 1em 0 0.5em 0;
   color: $header-color;
   &1 {
+    font-family: $secondary-font;
     @extend h;
     font-size: 2em;
     margin-bottom: 1em;

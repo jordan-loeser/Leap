@@ -1,7 +1,3 @@
-body {
-  padding-bottom: 50px;
-}
-
 header {
   overflow: auto;
 }
@@ -22,17 +18,32 @@ nav {
   margin-bottom: 10px;
   div {
     border-radius: 10px;
-    background-color: #397D24;
+    background-color: #006131;
     border: 2px solid white;
-    background: linear-gradient(to right bottom,
-                  rgba(0,67,26,1) 0%,
-                  #397D24 100% );
   }
   h3 {
     margin: .75em 0em;
     color: white;
   }
 }
+
+.line.demo {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+p.demo {
+  margin-top: 1em;
+}
+h2.demo {
+  margin-top: 2em;
+}
+
+.blueprint div {
+  height: 20px;
+  margin-bottom: 9px;
+  border-radius: 5px;
+  background: #DCDCDC;}
 
 #buttons {
   .bar-xs-12 {
